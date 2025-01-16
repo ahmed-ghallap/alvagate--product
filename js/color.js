@@ -92,38 +92,7 @@ function Palate(color) {
         root.style.setProperty(`--clr-100-25`, `${shades[100].replace("hsl", "hsla").replace(")", ", 0.25)")}`);
         root.style.setProperty(`--clr-100-50`, `${shades[100].replace("hsl", "hsla").replace(")", ", 0.5)")}`);
         root.style.setProperty(`--clr-100-75`, `${shades[100].replace("hsl", "hsla").replace(")", ", 0.75)")}`);
-    
-    
-
 }    
-
-function updateSVGColor(svgObject) {
-    // الحصول على عنصر الـ object
-
-    // التحقق من تحميل الـ SVG
-    svgObject.addEventListener('load', function() {
-        // الوصول إلى محتوى الـ SVG داخل الـ object
-        const svgDoc = svgObject.contentDocument;
-        console.log(svgObject.getProperty('color'))
-
-        // الحصول على قيمة المتغير من الجذر (root)
-        const rootStyles = getComputedStyle(document.documentElement);
-        const newColor = rootStyles.getPropertyValue('--clr-300').trim();
-
-        // الحصول على جميع العناصر داخل الـ SVG
-        const elements = svgDoc.querySelectorAll('*[fill="var(--clr-300)"], *[fill^="var(--vlr-"]');
-        
-        elements.forEach(el => {
-            // تغيير خاصية fill لجميع العناصر التي تحتوي على المتغير
-            el.setAttribute('fill', newColor);
-        });
-    });
-}
-
-// استدعاء الدالة عند تحميل الـ SVG أو عند تغيير المتغير
-document.querySelectorAll('object').forEach((el) => {
-    updateSVGColor(el);
-})
 
 // الحصول على اللون من URL
 const urlParams = new URLSearchParams(window.location.search);

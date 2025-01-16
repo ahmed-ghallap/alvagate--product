@@ -16,7 +16,7 @@ main #desc {
 }
 
 main #food-info {
-    border-block: 2px solid var(--clr-950);
+    border-block: 2px solid var(--clr-900);
     padding-block: $gap/3;
     div {
         display: flex;
@@ -36,7 +36,7 @@ main #food-info {
         }
         // icon
         i {
-            color: var(--clr-800);
+            color: var(--clr-700);
         }
     }
 }
@@ -53,7 +53,7 @@ main #ingradiants {
         text-wrap: nowrap;
         padding: 10px 14px;
         background-color: var(--clr-50);
-        color: var(--clr-600);
+        color: var(--clr-800);
         border: 1px solid var(--clr-600);
         border-radius: 12px;
         text-shadow: 0 4px 4px var(--clr-950-25);
@@ -117,11 +117,11 @@ main #comments .comment {
         width: 100%;
         text-align: center;
         direction: ltr;
-        .fa-regular{
-            fill: var(--clr-700);
+        .fa-regular {
+            color: var(--clr-700);
         }
         .fa-solid {
-            color: var(--clr-500);
+            color: var(--clr-600);
         }
     }
 }

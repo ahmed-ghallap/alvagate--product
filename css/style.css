@@ -162,7 +162,7 @@ main #desc button {
   margin-top: .45rem; }
 
 main #food-info {
-  border-block: 2px solid var(--clr-950);
+  border-block: 2px solid var(--clr-900);
   padding-block: 1rem; }
   main #food-info div {
     display: flex;
@@ -179,7 +179,7 @@ main #food-info {
         transform: translateY(2px);
         direction: ltr; }
     main #food-info div i {
-      color: var(--clr-800); }
+      color: var(--clr-700); }
 
 main #ingradiants {
   padding-block: 1rem; }
@@ -192,7 +192,7 @@ main #ingradiants {
     text-wrap: nowrap;
     padding: 10px 14px;
     background-color: var(--clr-50);
-    color: var(--clr-600);
+    color: var(--clr-800);
     border: 1px solid var(--clr-600);
     border-radius: 12px;
     text-shadow: 0 4px 4px var(--clr-950-25); }
@@ -247,9 +247,9 @@ main #comments .comment {
     text-align: center;
     direction: ltr; }
     main #comments .comment .stars .fa-regular {
-      fill: var(--clr-700); }
+      color: var(--clr-700); }
     main #comments .comment .stars .fa-solid {
-      color: var(--clr-500); }
+      color: var(--clr-600); }
 
 footer {
   position: fixed;

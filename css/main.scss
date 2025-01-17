@@ -18,17 +18,19 @@ main #desc {
 main #food-info {
     border-block: 2px solid var(--clr-900);
     padding-block: $gap/3;
-    div {
+    .container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-        & > span {
+        flex-wrap: wrap;
+        gap: 1rem;
+        & > .info {
             color: black;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: .8rem;
-            min-width: 70px;
+            // min-width: 70px;
             .digit {
                 transform: translateY(2px);
                 direction: ltr;

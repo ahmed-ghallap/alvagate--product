@@ -164,21 +164,22 @@ main #desc button {
 main #food-info {
   border-block: 2px solid var(--clr-900);
   padding-block: 1rem; }
-  main #food-info div {
+  main #food-info .container {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    main #food-info div > span {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; }
+    main #food-info .container > .info {
       color: black;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: .8rem;
-      min-width: 70px; }
-      main #food-info div > span .digit {
+      gap: .8rem; }
+      main #food-info .container > .info .digit {
         transform: translateY(2px);
         direction: ltr; }
-    main #food-info div i {
+    main #food-info .container i {
       color: var(--clr-700); }
 
 main #ingradiants {
